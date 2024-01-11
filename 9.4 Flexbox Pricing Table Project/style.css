@@ -1,0 +1,87 @@
+body {
+    font-family: 'Sono', sans-serif;
+  }
+
+  /* Hint: What can you do with a media query and flexbox? */
+  @media (min-width: 820px) {
+    .pricing-container {
+      display: flex;
+      gap: 30px;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    .pricing-plan {
+      border-radius: 20%;
+      background-color: lightgray;
+      text-align: center;
+      flex: 1;
+      max-width: 400px;
+      padding: 20px;
+    }
+    .plan-title {
+      font-size: 20px;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+    .plan-price {
+      font-size: 30px;
+      font-weight: bold;
+    }
+    .plan-features {
+      font-size: 15px;
+      list-style: none;
+    }
+    .plan-features li {
+      margin-bottom: 10px;
+      text-align: left;
+    }
+    .plan-button {
+      font-size: 20px;
+      color: white;
+      background-color: orangered;
+    }
+  }
+  @media (max-width: 819px) {
+    .pricing-container {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      align-items: center;
+      height: 100%;
+    }
+    .pricing-plan {
+      padding: 15px;
+      border-radius: 20%;
+      flex-basis: 300px;
+      width: 450px;
+      background-color: lightgray;
+      text-align: center;
+      
+     
+    }
+    .plan-title {
+      font-size: 30px;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+    .plan-price {
+      font-size: 45px;
+      font-weight: bold;
+    }
+    .plan-features {
+      font-size: 20px;
+    }
+    .plan-features li {
+      list-style: none;
+      margin-bottom: 10px;
+      text-align: left;
+    }
+    .plan-button {
+      color: white;
+      background-color: orangered;
+      font-size: 30px;
+      border: none;
+      border-radius: 20px;
+    }
+  }
