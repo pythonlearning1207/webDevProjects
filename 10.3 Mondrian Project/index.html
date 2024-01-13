@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mondrian Project</title>
+  <style>
+    /* 
+    Write your CSS here 
+    Gap Colour: #000
+    White: #F0F1EC
+    Red: #E72F24
+    Black: #232629
+    Blue: #004592
+    Yellow: #F9D01E
+
+    For dimensions, see dimensions.png image.
+    HINT: Remember you can't change the properties of grid lines.
+    But grid lines are transparent!
+    */
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      padding: 0;
+      margin: 0;
+    }
+
+    .gridcontainer {
+      height: 748px;
+      width: 748px;
+      display: grid;
+      background-color: black;
+      gap: 9px;
+      grid-template-columns: 320px 198px 153px 50px;
+      grid-template-rows: 414px 130px 155px 20px;
+    }
+    .griditems {
+      background-color: #F0F1EC;
+    }
+    .red {
+      background-color: #E72F24;
+    }
+    .yellow {
+      background-color: #F9D01E;
+    }
+    .black {
+      background-color: #232629;
+    }
+    .second {
+      grid-column: span 3;
+    }
+    .third {
+      grid-row: span 2
+    }
+    .forth {
+      grid-column: span 2;
+      grid-row: span 2;
+    }
+    .blue {
+      background-color: #004592;
+    }
+    .sixth {
+      grid-row: span 2;
+      border-top: 10px solid black;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Write your HTML here -->
+  <div class="gridcontainer">
+    <div class="red griditems"></div>
+    <div class="second griditems"></div>
+    <div class="third griditems"></div>
+    <div class="forth griditems"></div>
+    <div class="blue griditems"></div>
+    <div class="sixth griditems"></div>
+    <div class="griditems"></div>
+    <div class="yellow griditems"></div>
+    <div class="black griditems"></div>
+  </div>
+</body>
+
+</html>
