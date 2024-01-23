@@ -1,23 +1,25 @@
 //step1
-var gamePattern = [];
 var buttonColors = ["red", "blue", "green", "yellow"];
+var gamePattern = [];
+var userClickedPattern = [];
 
 function nextSequence() {
     var randomNumber = Math.floor(Math.random()*4) ;
     return randomNumber;
 }
 
+/*
 var randomChosenColor = buttonColors[nextSequence()];
-
 gamePattern.push(randomChosenColor);
 flash(randomChosenColor);
 playSound(randomChosenColor);
+*/
 
 //flash function
 function flash(randomChosenColor) {
-    $("#randomChosenColor").addClass("flash");
+    $("#" + randomChosenColor).addClass("flash");
     setTimeout(function(){
-        $("#red").removeClass("flash");
+        $("#" + randomChosenColor).removeClass("flash");
     }, 100)
 }
 
@@ -29,3 +31,8 @@ function playSound(randomChosenColor) {
 }
 
 //check which button is pressed
+$(".btn").click(function(){
+    var userChosenColor = ($(this).attr("id"));
+});
+
+//userClickedPattern.push(userChosenColor);
